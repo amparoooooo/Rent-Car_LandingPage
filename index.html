@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amparo's Rent Car - Alquiler de Vehículos Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#dc2626', // red-600
+                        'primary-dark': '#b91c1c', // red-700
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-car text-primary text-2xl mr-3"></i>
+                    <span class="text-xl font-bold text-gray-900">Amparo's Rent Car</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-primary transition-colors duration-300">Inicio</a>
+                    <a href="#servicios" class="text-gray-700 hover:text-primary transition-colors duration-300">Servicios</a>
+                    <a href="#nosotros" class="text-gray-700 hover:text-primary transition-colors duration-300">Nosotros</a>
+                    <a href="#reseñas" class="text-gray-700 hover:text-primary transition-colors duration-300">Reseñas</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-primary transition-colors duration-300">Contacto</a>
+                </div>
+                <button class="md:hidden text-gray-700" aria-label="Abrir menú">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="bg-gradient-to-br from-gray-50 to-gray-100 pt-20 pb-16 lg:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="text-center lg:text-left">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+            Bienvenido a
+            <span class="text-primary">Amparo's Rent Car</span>
+          </h1>
+          <p class="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
+            Tu compañía de confianza para el alquiler de vehículos. Con más de 10 años de experiencia, 
+            ofrecemos una flota moderna y diversa para satisfacer todas tus necesidades de transporte, 
+            desde viajes de negocios hasta aventuras familiares.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <button class="bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                Reservar Ahora
+            </button>
+            <button class="border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300">
+                Ver Flota
+            </button>
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&q=80" alt="Luxury Car" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                </div>
+                <div class="relative">
+ 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="servicios" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                    ¿Por qué elegir Amparo's Rent Car?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Nos destacamos por ofrecer un servicio integral y personalizado que supera las expectativas de nuestros clientes
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 - Flota Moderna -->
+                <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors duration-300">
+                        <i class="fas fa-code text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Flota Moderna</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Vehículos modelo reciente con la última tecnología en seguridad y comodidad para tu tranquilidad
+                    </p>
+                </div>
+
+                <!-- Feature 2 - Servicio Personalizado -->
+                <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors duration-300">
+                        <i class="fas fa-palette text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Servicio Personalizado</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Adaptamos nuestros servicios a tus necesidades específicas con atención personalizada y flexible
+                    </p>
+                </div>
+
+                <!-- Feature 3 - Proceso Ágil -->
+                <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors duration-300">
+                        <i class="fas fa-bolt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Proceso Ágil</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Reserva y retira tu vehículo en minutos con nuestro sistema optimizado y eficiente
+                    </p>
+                </div>
+
+                <!-- Feature 4 - Disponibilidad Total -->
+                <div class="text-center group hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors duration-300">
+                        <i class="fas fa-mobile-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Disponibilidad Total</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Acceso completo desde cualquier dispositivo con soporte 24/7 para todas tus consultas
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+        <section id="nosotros" class="py-24 bg-gray-50 flex items-center justify-center min-h-screen">
+    <div class="max-w-3xl text-center px-4">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        La historia de Amparo's Rent Car
+      </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Fundada por Amparo en 2014, nuestra empresa nació con la visión de transformar 
+                        la experiencia de alquiler de vehículos, priorizando la calidad del servicio y la satisfacción 
+                        del cliente por encima de todo.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Lo que comenzó como un pequeño negocio familiar se ha convertido en una de las empresas 
+                        de alquiler más confiables de la región, manteniendo siempre nuestros valores de honestidad, 
+                        transparencia y excelencia en el servicio.
+                    </p>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">10+</div>
+                            <div class="text-gray-600">Años de Experiencia</div>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-award text-primary text-3xl mb-2"></i>
+                            <div class="text-sm font-semibold text-gray-900">Empresa</div>
+                            <div class="text-xs text-gray-600">Certificada</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-2">25K+</div>
+                            <div class="text-gray-600">Clientes Satisfechos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reseñas" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                    Lo que dicen nuestros clientes
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                    La satisfacción de nuestros clientes es nuestro mayor logro. Conoce sus experiencias con Amparo's Rent Car
+                </p>
+            </div>
+            
+            <!-- Reseñas centradas -->
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Review 1 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400 mr-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">5.0/5</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            "Excelente servicio desde el primer contacto. El vehículo estaba impecable y el proceso 
+                            de entrega fue muy rápido. Definitivamente volveré a alquilar con Amparo's."
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold mr-3">
+                                M
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">María González</div>
+                                <div class="text-sm text-gray-600">Cliente desde 2022</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400 mr-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">5.0/5</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            "La atención personalizada de Amparo y su equipo es excepcional. Siempre encuentran 
+                            la solución perfecta para mis necesidades de transporte empresarial."
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold mr-3">
+                                C
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Carlos Mendoza</div>
+                                <div class="text-sm text-gray-600">Empresario</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400 mr-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">5.0/5</span>
+                        </div>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            "Precios justos, vehículos en excelente estado y un servicio que realmente se preocupa 
+                            por el cliente. Amparo's es mi primera opción siempre."
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold mr-3">
+                                L
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Laura Jiménez</div>
+                                <div class="text-sm text-gray-600">Turista frecuente</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 lg:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                    ¿Listo para tu próximo viaje?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Contáctanos hoy mismo y descubre por qué Amparo's Rent Car es la mejor opción para tus necesidades de transporte
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Solicita tu Cotización</h3>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="nombre" class="block text-sm font-medium text-gray-700 mb-2">Nombre Completo</label>
+                                <input type="text" id="nombre" name="nombre" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-300"
+                                       placeholder="Tu nombre completo">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-300"
+                                       placeholder="tu@email.com">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="telefono" class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-300"
+                                       placeholder="+1 (555) 123-4567">
+                            </div>
+                            <div>
+                                <label for="vehiculo" class="block text-sm font-medium text-gray-700 mb-2">Tipo de Vehículo</label>
+                                <select id="vehiculo" name="vehiculo" 
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-300">
+                                    <option value="">Selecciona un tipo</option>
+                                    <option value="economico">Económico</option>
+                                    <option value="compacto">Compacto</option>
+                                    <option value="suv">SUV</option>
+                                    <option value="lujo">Lujo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-300"
+                                      placeholder="Cuéntanos sobre tus necesidades de alquiler..."></textarea>
+                        </div>
+                        <button type="submit" 
+                                class="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Información de Contacto</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Oficina Principal</div>
+                                    <div class="text-gray-600">Av. España 456</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-phone text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Teléfonos</div>
+                                    <div class="text-gray-600">+58 (212) 555-0123</div>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-gray-900 mb-1">Correo Electrónico</div>
+                                    <div class="text-gray-600">info@amparosrentcar.com<br>reservas@amparosrentcar.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-4">Horarios de Atención</h4>
+                        <div class="space-y-3 text-gray-600">
+                            <div class="flex justify-between">
+                                <span>Lunes - Viernes:</span>
+                                <span class="font-medium">7:00 AM - 7:00 PM</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Sábados:</span>
+                                <span class="font-medium">8:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Domingos:</span>
+                                <span class="font-medium">9:00 AM - 3:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-3 bg-primary/10 rounded-lg">
+                            <div class="flex items-center text-primary">
+                                <i class="fas fa-clock mr-2"></i>
+                                <span class="font-medium">Servicio de Emergencia 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-car text-primary text-2xl mr-3"></i>
+                        <span class="text-xl font-bold">Amparo's Rent Car</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Tu compañía de confianza para el alquiler de vehículos. 
+                        Calidad, seguridad y servicio excepcional desde 2014.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Alquiler Diario</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Alquiler Semanal</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Alquiler Mensual</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Servicio Corporativo</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Vehículos de Lujo</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Información</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Sobre Nosotros</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Nuestra Flota</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Términos y Condiciones</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Política de Privacidad</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors duration-300">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto Rápido</h4>
+                    <div class="space-y-3 text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-primary mr-2"></i>
+                            <span>+58 (212) 555-0123</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-primary mr-2"></i>
+                            <span>info@amparosrentcar.com</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary mr-2 mt-1"></i>
+                            <span>Av. España 456</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Amparo's Rent Car. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle (basic implementation)
+        const mobileMenuButton = document.querySelector('button[aria-label="Abrir menú"]');
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', function() {
+                // Add mobile menu functionality here
+                console.log('Mobile menu clicked');
+            });
+        }
+
+        // Form submission handler
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Add form submission logic here
+                alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+            });
+        }
+    </script>
+</body>
+</html>
